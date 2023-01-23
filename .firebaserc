@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "ashik-digitalresume"
+  },
+  "targets": {
+    "ashik-digitalresume": {
+      "hosting": {
+        "digital_resume": [
+          "ashik-digitalresume"
+        ]
+      }
+    }
+  }
+}

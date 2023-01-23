@@ -1,0 +1,33 @@
+
+
+<div class="container">
+    <div class="row d-flex align-items-center justify-content-center my-5">
+    
+    <form class="col-xs-3 col-md-6 col-lg-6">
+    <div class="card px-5 py-5">
+
+        <div class="form-input">
+    <input type="text" class="form-control" placeholder="Enter the phone no" 
+    [(ngModel)]="phonenumber" min="10" max="15" name="phonenumber">
+    </div>
+    
+    <button (click)="getotp()" class="btn btn-success mt-4 signup">Get OTP </button>
+    
+
+</div>
+
+   
+    <div id="sign-in-button"></div>
+    </form> 
+    
+</div> 
+
+</div>
+
+<script>
+    const phoneInputField = document.querySelector("#phonenumber");
+    const phoneInput = window.intlTelInput(phoneInputField, {
+      utilsScript:
+        "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+    });
+  </script>
